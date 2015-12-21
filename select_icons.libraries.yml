@@ -1,0 +1,11 @@
+selecticons:
+  version: VERSION
+  js:
+    js/ui.selecticons.js: {}
+  css:
+    component:
+      css/seven/selectmenu.css: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.ui
+    - core/jquery.ui.selectmenu
