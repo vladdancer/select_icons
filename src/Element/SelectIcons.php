@@ -34,4 +34,11 @@ class SelectIcons extends Select {
 
     return $info;
   }
+
+  public static function preRenderSelect($element) {
+    $element = parent::preRenderSelect($element);
+    $element['#attached']['library'][] = 'select_icons/scrollbar';
+    return $element;
+  }
+
 }
