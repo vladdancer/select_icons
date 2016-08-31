@@ -36,6 +36,9 @@
       // Set new classes for current option's icon element.
       currentIcon.removeClass();
       currentIcon.addClass(classes + ' ui-current-item-icon');
+    },
+    change: function() {
+      $(this).trigger('change');
     }
   });
 })(jQuery);
