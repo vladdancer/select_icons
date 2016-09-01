@@ -10,6 +10,24 @@
   right: auto;
 }
 
+/**
+ * Place ajax throbber at the center of dropdown,
+ * also making dropdown more transparent.
+ */
+.selecticons + .ajax-progress {
+  position: absolute;
+  top: 55px;
+  left: 70px;
+  z-index: 11;
+  font-weight: 600;
+}
+.selecticons + .ajax-progress .throbber {
+  padding-right: 6px;
+}
+.ajax-progress + .ui-selectmenu-button {
+  opacity: 0.15;
+}
+
 .ui-widget.ui-selectmenu-button {
   box-sizing: border-box;
   display: inline-block;
