@@ -24,7 +24,7 @@
     attach: function (context) {
 
       $('.selecticons').selecticons({
-        create: function( event, ui ) {
+        create: function (event, ui) {
           // Get classes of currently selected option.
           var currentClasses = $(this).find('option:selected').attr('data-class');
           var button = $('#' + this.id + '-button');
@@ -32,7 +32,7 @@
           // Create element for current selection's icon.
           button.prepend('<span class="ui-current-item-icon ' + currentClasses + '"></span>')
         },
-        select: function( event, ui ) {
+        select: function (event, ui) {
           // Get current option's icon element.
           var currentIcon = $('#' + this.id + '-button > .ui-current-item-icon');
 
@@ -43,10 +43,10 @@
           currentIcon.removeClass();
           currentIcon.addClass(classes + ' ui-current-item-icon');
         },
-        change: function() {
+        change: function () {
           $(this).trigger('change');
         }
       });
     }
   }
-}(jQuery, Drupal, drupalSettings, this));
+})(jQuery);

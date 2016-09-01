@@ -9,3 +9,25 @@ selecticons:
     - core/jquery
     - core/jquery.ui
     - core/jquery.ui.selectmenu
+
+scrollbar:
+  version: VERSION
+  js:
+    js/ui.scrollbar.js: {}
+  dependencies:
+    - select_icons/ui.selecticons
+    - select_icons/mCustomScrollbar
+    - core/drupalSettings
+
+mCustomScrollbar:
+  remote: https://github.com/malihu/malihu-custom-scrollbar-plugin
+  license:
+    name: MIT
+    url: https://github.com/malihu/malihu-custom-scrollbar-plugin/blob/master/LICENSE.txt
+    gpl-compatible: true
+  version: 3.1.5
+  js:
+    /libraries/mCustomScrollbar/js/minified/jquery.mCustomScrollbar.min.js: {}
+  css:
+    base:
+      /libraries/mCustomScrollbar/jquery.mCustomScrollbar.min.css: {}
