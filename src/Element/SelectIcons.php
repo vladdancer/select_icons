@@ -34,5 +34,4 @@ class SelectIcons extends Select {
 
     return $info;
   }
-
 }
