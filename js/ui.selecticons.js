@@ -45,8 +45,24 @@
         },
         change: function () {
           $(this).trigger('change');
-        }
+        },
+        open: function() {
+          if ($().mCustomScrollbar) {
+            $(".ui-menu").mCustomScrollbar({
+              setHeight:200,
+              theme:"dark-3",
+              mouseWheel:{ preventDefault:true },
+              scrollButtons: { enable: true}
+            });
+          }
+        },
+        close: function() {
+          if ($().mCustomScrollbar) {
+            $(".ui-menu").mCustomScrollbar("destroy");
+          }
+        },
+        width: 200
       });
     }
   }
-})(jQuery);
+}(jQuery, Drupal, drupalSettings, this));

@@ -9,13 +9,6 @@ selecticons:
     - core/jquery
     - core/jquery.ui
     - core/jquery.ui.selectmenu
-
-scrollbar:
-  version: VERSION
-  js:
-    js/ui.scrollbar.js: {}
-  dependencies:
-    - select_icons/ui.selecticons
     - select_icons/mCustomScrollbar
     - core/drupalSettings
 
