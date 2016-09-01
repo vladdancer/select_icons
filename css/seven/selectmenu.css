@@ -14,10 +14,13 @@
  * Place ajax throbber at the center of dropdown,
  * also making dropdown more transparent.
  */
+.form-type-select-icons {
+  position: relative;
+}
 .selecticons + .ajax-progress {
   position: absolute;
-  top: 55px;
-  left: 70px;
+  top: 4px;
+  left: 55px;
   z-index: 11;
   font-weight: 600;
 }
